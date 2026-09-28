@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+</head>
+<body>
+    
+   <h1>ON CLICK</h1>
+   <h1 class="name">THARA</h1>
+   <button type="submit" onclick="changename()">Web Developer</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>onclick</h1>
+    <h1 class="name">Vikas</h1>
+    <button type="submit" onclick="changeName()">Change Name</button>
+
+
+    <h1>mouseenter</h1>
+    <h1 
+    style="background-color: bisque; text-align: center;" 
+    onmouseenter="show()"
+    onmouseleave="remove()"
+    >
+        fgrs
+    </h1>
+
+    <h2 class="info"></h2>
+
+    <script>
+        function changeName(){
+            document.getElementsByClassName("name")[0].innerHTML="Tharani";
+            document.getElementsByClassName("name")[0].style.color="red";
+        }
+
+
+        function show(){
+            document.getElementsByClassName("info")[0].innerHTML="Senior Python Developer..";
+             
+        }
+
+
+        function remove(){
+            document.getElementsByClassName("info")[0].innerHTML="";
+        }
+
+        document.writeln("-----------------------------------------------------------");
+    </script>
+    
+
+    <h2>Prac onclick</h2>
+    <h1 class="me">Thara</h1>
+    <button type="submit" onclick="show">who is she</button>
+
+    <script>
+        function show(){
+            document.getElementsByClassName("me")[0].innerHTML="FullStack Web Developer";
+        }
+    </script>
+</body>
+</html>
