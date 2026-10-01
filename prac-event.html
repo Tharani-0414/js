@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript Events</h1>
+    <h2>The mouseover and mousout Events</h2>
+
+    <div id="box"
+    style="width:200px;height:100px;padding:16px;border:1px solid #000; background-color: aqua;">
+    Move mouse over this box!
+    </div>
+
+    <script>
+    const box = document.getElementById("box");
+
+    // Let box listen for mouseover
+    box.addEventListener("mouseover", function () {
+    box.innerHTML = "Mouse is over me!";
+    });
+
+    // Let box listen for mouseout
+    box.addEventListener("mouseout", function () {
+    box.innerHTML = "Mouse is out!";
+    });
+    </script>
+
+    <h1 style="background-color: burlywood;"
+    onmouseenter="show()"
+    onmouseleave="remove()"
+    ->Thara</h1>
+    <h2 class="th"></h2>
+
+    <script>
+        function show(){
+        document.getElementsByClassName("th")[0].innerHTML="web developer....";
+        }
+        function remove(){
+            document.getElementsByClassName("th")[0].innerHTML="`~~~~~~~~~~~~IT student";
+        }
+    </script>
+
+    <h1 class="name"></h1>
+    <h2>JS Events</h2>
+    <button type="submit" onclick="changeName()">mouse event</button>
+    <script>
+        function changeName(){
+            document.getElementsByClassName("name")[0].innerHTML="Thankyou for your response vikassshhhh..!!!!!!";
+        }
+    </script>
+</body>
+</html>
