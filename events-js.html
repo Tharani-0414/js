@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="load()" onsize="re()">
+    
+    <h1>Events Handling</h1>
+
+    <form onsubmit="sub(event)">
+        <input type="text" placeholder="Name" onfocus="bg(this.id)" id="fn">
+        <br><br>
+
+        <input type="text" placeholder="lastname" onfocus="color(this.id)" id="fnn">
+        <br><br>
+
+        <input type="email" placeholder="abc@gmail.com">
+        <br><br>
+
+        <input type="password" placeholder="Password" id="ps">
+        <br><br>
+
+        <select onchange="so()" id="">
+            <option value="java">Java</option>
+            <option value="java">Python</option>
+            <option value="java">Mern Stack</option>
+            <option value="java">Cloud Computing</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" name="gender" id="ch" onfocus="ge">Female
+        <input type="checkbox" name="gender" id="ch">Male
+        <br><br>
+
+        <h1 id="show"></h1>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function bg(c){
+            document.getElementById(c).style.backgroundColor="blue";
+        }
+
+        function color(c){
+            document.getElementById(c).style.backgroundColor="pink";
+        }
+
+        function sub(event){
+            event.preventDefault();
+            document.getElementById("show").innerHTML="Data Submitted"
+            alert("Form Submitted..")
+        }
+    </script>
+    <br>
+<hr>
+    <!-- Functions -->
+     <h1>Java</h1>
+     
+     <script>
+        function name() {
+            console.log("This is Thara");
+        }
+        name();
+
+
+        function Sum(a, b) {
+        console.log(a + b);
+        }
+        Sum(5, 3); 
+
+     </script>
+</body>
+</html>
